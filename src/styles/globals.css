@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'azonix';
+  src: url('/azonix/Azonix.otf');
+  /* You can include additional font formats (e.g., woff, ttf) as needed */
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  cursor: url('/shape.svg') auto !important;
+
+}
+
+.azonix {
+  font-family: 'azonix' !important;
+}
+
+body {
+  background-image: url('/body.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.text-gradient {
+  background: linear-gradient(91deg, #FFD403 -4.44%, #8250FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-light-theme {
+  opacity: 0.7;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.nav-ul-parent ul li a {
+  color: #fff;
+  opacity: 0.7;
+  font-size: small;
+}
+
+.nav-ul-parent svg {
+  opacity: 0.7;
+}
+
+.btn-connect {
+  background: linear-gradient(137deg, #FFCA06 21.24%, #D69A57 75.79%);
+  filter: drop-shadow(0px 4px 20px rgba(230, 160, 54, 0.50));
+}
+
+.collection-img {
+  top: -30%;
+  right: 38%;
+  width: 43%;
+}
+
+.banner-img {
+  margin-top: -13%;
+}
+
+.mint-btn {
+  background-color: #2A1F42;
+  border-radius: 15px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 20px 30px;
+  justify-content: space-between;
+}
+
+.mint-btn span {
+  cursor: pointer;
+}
+
+.mint-btn div {
+  color: #FFF;
+  opacity: 0.7;
+}
+
+.nft-box {
+  background-image: url('/card_bg.png');
+  background-repeat: repeat;
+  background-size: cover;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.nft-card-widget {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nft-card-widget span {
+  display: block;
+}
+
+.nft-card-widget button {
+  background: rgba(0, 0, 0, 0.30);
+  backdrop-filter: blur(10px);
+  padding: 13px 15px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.nft-card-widget:nth-child(2) span {
+  opacity: 0.7;
+  color: #FFF;
+}
+
+.nft-details {
+  border: 1px solid rgba(235, 197, 255, 0.09);
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.30);
+}
+
+.text-yellow {
+  color: #FFCA06;
+}
+
+.bid-btn {
+  background: linear-gradient(121deg, rgba(246, 191, 26, 0.23) 7.47%, rgba(225, 167, 65, 0.00) 68.87%);
+  stroke-width: 1px;
+  color: #FFCA06;
+  font-weight: bold;
+  border: 1px solid #FFCA06;
+  border-radius: 14px;
+  font-size: 14px;
+  padding: 10px 15px;
+
+}
